@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HomePage</title>
+</head>
+
+<body id="home">
+    <div class="navbar">
+        <div class="left">
+            <div style="color: rgb(110, 18, 18); margin-right: 20px;">MATRIX CINEMA</div>
+        </div>
+        <div class="centre">
+            <div onclick="home()">Home</div>
+        </div>
+        <div class="right">
+            <div onclick="window.location.href='./index.html'">Logout</div>
+        </div>
+    </div>
+    <div id="main_container">
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <div class="slide first">
+                    <img src="./assets/slideshowbg1.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./assets/sliderbg2.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./assets/sliderbg3.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./assets/sliderbg4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="Movie_posters">
+
+            <div class="main_container">
+                <div class="card">
+                    <div class="front"><img src="./assets/topgun poster.jpg" width="100%" height="100%" alt=""></div>
+                    <div class="back">After thirty years, Maverick is still pushing the envelope as a top naval aviator,
+                        but must confront ghosts of his past when he leads TOP GUN's elite graduates on a mission that
+                        demands the ultimate sacrifice from those chosen to fly it.
+                        <br>
+                        <button class="book" onclick="topgun()">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main_container">
+                <div class="card">
+                    <div class="front"><img src="./assets/annabell poster.jpg" width="100%" height="100%" alt=""></div>
+                    <div class="back">While babysitting the daughter of Ed and Lorraine Warren, a teenager and her
+                        friend unknowingly awaken an evil spirit trapped in a doll.Can Annabelle Come Out to Play.
+                        <br><br>
+                        <br>
+                        <button class="book" onclick="Annabelle()">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main_container">
+                <div class="card">
+                    <div class="front"><img src="./assets/spiderman poster.jpg" width="100%" height="100%" alt=""></div>
+                    <div class="back">With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When
+                        a spell goes wrong, dangerous foes from other worlds start to appear, forcing Peter to discover
+                        what it truly means to be Spider-Man.
+                        <br>
+                        <button class="book" onclick="Spiderman()">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main_container">
+                <div class="card">
+                    <div class="front"><img src="./assets/godzilla poster.jpg" width="100%" height="100%" alt=""></div>
+                    <div class="back">The crypto-zoological agency Monarch faces off against a battery of god-sized
+                        monsters, including the mighty Godzilla, who collides with Mothra, Rodan, and his ultimate
+                        nemesis, the three-headed King Ghidorah.
+                        <br>
+                        <button class="book" onclick="godzilla()">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="topgun" id="topgun">
+        <center>
+            <div class="trailer">
+                <iframe src="https://www.youtube.com/embed/qSqVVswa420"></iframe>
+            </div>
+        </center>
+        <div class="seats">
+            <div class="screen">Screen</div>
+            <div class="row1">
+                <div class="row1_seats" id="tseat1" value="seat1" onclick="tbookseat(this.id)"></div>
+                <div class="row1_seats" id="tseat2" value="seat2" onclick="tbookseat(this.id)"></div>
+                <div class="row1_seats" id="tseat3" value="seat3" onclick="tbookseat(this.id)"></div>
+                <div class="row1_seats" id="tseat4" value="seat4" onclick="tbookseat(this.id)"></div>
+                <div class="row1_seats" id="tseat5" value="seat5" onclick="tbookseat(this.id)"></div>
+                <div class="row1_seats" id="tseat6" value="seat6" onclick="tbookseat(this.id)"></div>
+                <div class="row1_seats" id="tseat7" value="seat7" onclick="tbookseat(this.id)"></div>
+                <div class="row1_seats" id="tseat8" value="seat8" onclick="tbookseat(this.id)"></div>
+                <div class="row1_seats" id="tseat9" value="seat9" onclick="tbookseat(this.id)"></div>
+                <div class="row1_seats" id="tseat10" value="seat10" onclick="tbookseat(this.id)"></div>
+                <div class="row1_seats" id="tseat11" value="seat11" onclick="tbookseat(this.id)"></div>
+                <div class="row1_seats" id="tseat12" value="seat12" onclick="tbookseat(this.id)"></div>
+            </div>
+            <div class="row2">
+                <div class="row2_seats" id="tseat12" value="seat13" onclick="tbookseat(this.id)"></div>
+                <div class="row2_seats" id="tseat14" value="seat14" onclick="tbookseat(this.id)"></div>
+                <div class="row2_seats" id="tseat15" value="seat15" onclick="tbookseat(this.id)"></div>
+                <div class="row2_seats" id="tseat16" value="seat16" onclick="tbookseat(this.id)"></div>
+                <div class="row2_seats" id="tseat17" value="seat17" onclick="tbookseat(this.id)"></div>
+                <div class="row2_seats" id="tseat18" value="seat18" onclick="tbookseat(this.id)"></div>
+                <div class="row2_seats" id="tseat19" value="seat19" onclick="tbookseat(this.id)"></div>
+                <div class="row2_seats" id="tseat20" value="seat20" onclick="tbookseat(this.id)"></div>
+                <div class="row2_seats" id="tseat21" value="seat21" onclick="tbookseat(this.id)"></div>
+                <div class="row2_seats" id="tseat22" value="seat22" onclick="tbookseat(this.id)"></div>
+                <div class="row2_seats" id="tseat23" value="seat23" onclick="tbookseat(this.id)"></div>
+                <div class="row2_seats" id="tseat24" value="seat24" onclick="tbookseat(this.id)"></div>
+            </div>
+            <div class="row3">
+                <div class="row3_seats" id="tseat25" value="seat25" onclick="tbookseat(this.id)"></div>
+                <div class="row3_seats" id="tseat26" value="seat26" onclick="tbookseat(this.id)"></div>
+                <div class="row3_seats" id="tseat27" value="seat27" onclick="tbookseat(this.id)"></div>
+                <div class="row3_seats" id="tseat28" value="seat28" onclick="tbookseat(this.id)"></div>
+                <div class="row3_seats" id="tseat29" value="seat29" onclick="tbookseat(this.id)"></div>
+                <div class="row3_seats" id="tseat30" value="seat30" onclick="tbookseat(this.id)"></div>
+                <div class="row3_seats" id="tseat31" value="seat31" onclick="tbookseat(this.id)"></div>
+                <div class="row3_seats" id="tseat32" value="seat32" onclick="tbookseat(this.id)"></div>
+                <div class="row3_seats" id="tseat33" value="seat33" onclick="tbookseat(this.id)"></div>
+                <div class="row3_seats" id="tseat34" value="seat34" onclick="tbookseat(this.id)"></div>
+                <div class="row3_seats" id="tseat35" value="seat35" onclick="tbookseat(this.id)"></div>
+                <div class="row3_seats" id="tseat36" value="seat36" onclick="tbookseat(this.id)"></div>
+            </div>
+            <div class="button">
+                <button style="margin-top: 20px;" class="cinema_btn" onclick="save_topgun_ticket()">Book Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="annabelle" id="annabelle">
+        <center>
+            <div class="trailer">
+                <iframe width="600" height="400" src="https://www.youtube.com/embed/bCxm7cTpBAs"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </center>
+        <div class="seats">
+            <div class="screen">Screen</div>
+            <div class="row1">
+                <div class="row1_seats" id="aseat1" value="seat1" onclick="abookseat(this.id)"></div>
+                <div class="row1_seats" id="aseat2" value="seat2" onclick="abookseat(this.id)"></div>
+                <div class="row1_seats" id="aseat3" value="seat3" onclick="abookseat(this.id)"></div>
+                <div class="row1_seats" id="aseat4" value="seat4" onclick="abookseat(this.id)"></div>
+                <div class="row1_seats" id="aseat5" value="seat5" onclick="abookseat(this.id)"></div>
+                <div class="row1_seats" id="aseat6" value="seat6" onclick="abookseat(this.id)"></div>
+                <div class="row1_seats" id="aseat7" value="seat7" onclick="abookseat(this.id)"></div>
+                <div class="row1_seats" id="aseat8" value="seat8" onclick="abookseat(this.id)"></div>
+                <div class="row1_seats" id="aseat9" value="seat9" onclick="abookseat(this.id)"></div>
+                <div class="row1_seats" id="aseat10" value="seat10" onclick="abookseat(this.id)"></div>
+                <div class="row1_seats" id="aseat11" value="seat11" onclick="abookseat(this.id)"></div>
+                <div class="row1_seats" id="aseat12" value="seat12" onclick="abookseat(this.id)"></div>
+            </div>
+            <div class="row2">
+                <div class="row2_seats" id="aseat12" value="seat13" onclick="abookseat(this.id)"></div>
+                <div class="row2_seats" id="aseat14" value="seat14" onclick="abookseat(this.id)"></div>
+                <div class="row2_seats" id="aseat15" value="seat15" onclick="abookseat(this.id)"></div>
+                <div class="row2_seats" id="aseat16" value="seat16" onclick="abookseat(this.id)"></div>
+                <div class="row2_seats" id="aseat17" value="seat17" onclick="abookseat(this.id)"></div>
+                <div class="row2_seats" id="aseat18" value="seat18" onclick="abookseat(this.id)"></div>
+                <div class="row2_seats" id="aseat19" value="seat19" onclick="abookseat(this.id)"></div>
+                <div class="row2_seats" id="aseat20" value="seat20" onclick="abookseat(this.id)"></div>
+                <div class="row2_seats" id="aseat21" value="seat21" onclick="abookseat(this.id)"></div>
+                <div class="row2_seats" id="aseat22" value="seat22" onclick="abookseat(this.id)"></div>
+                <div class="row2_seats" id="aseat23" value="seat23" onclick="abookseat(this.id)"></div>
+                <div class="row2_seats" id="aseat24" value="seat24" onclick="abookseat(this.id)"></div>
+            </div>
+            <div class="row3">
+                <div class="row3_seats" id="aseat25" value="seat25" onclick="abookseat(this.id)"></div>
+                <div class="row3_seats" id="aseat26" value="seat26" onclick="abookseat(this.id)"></div>
+                <div class="row3_seats" id="aseat27" value="seat27" onclick="abookseat(this.id)"></div>
+                <div class="row3_seats" id="aseat28" value="seat28" onclick="abookseat(this.id)"></div>
+                <div class="row3_seats" id="aseat29" value="seat29" onclick="abookseat(this.id)"></div>
+                <div class="row3_seats" id="aseat30" value="seat30" onclick="abookseat(this.id)"></div>
+                <div class="row3_seats" id="aseat31" value="seat31" onclick="abookseat(this.id)"></div>
+                <div class="row3_seats" id="aseat32" value="seat32" onclick="abookseat(this.id)"></div>
+                <div class="row3_seats" id="aseat33" value="seat33" onclick="abookseat(this.id)"></div>
+                <div class="row3_seats" id="aseat34" value="seat34" onclick="abookseat(this.id)"></div>
+                <div class="row3_seats" id="aseat35" value="seat35" onclick="abookseat(this.id)"></div>
+                <div class="row3_seats" id="aseat36" value="seat36" onclick="abookseat(this.id)"></div>
+            </div>
+            <div class="button">
+                <button style="margin-top: 30px;" class="cinema_btn" onclick="save_anabella_ticket()">Book Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="spiderman" id="spiderman">
+        <center>
+            <div class="trailer">
+                <iframe width="600" height="400" src="https://www.youtube.com/embed/JfVOs4VSpmA"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </center>
+        <div class="seats">
+            <div class="screen">Screen</div>
+            <div class="row1">
+                <div class="row1_seats" id="sseat1" value="seat1" onclick="sbookseat(this.id)"></div>
+                <div class="row1_seats" id="sseat2" value="seat2" onclick="sbookseat(this.id)"></div>
+                <div class="row1_seats" id="sseat3" value="seat3" onclick="sbookseat(this.id)"></div>
+                <div class="row1_seats" id="sseat4" value="seat4" onclick="sbookseat(this.id)"></div>
+                <div class="row1_seats" id="sseat5" value="seat5" onclick="sbookseat(this.id)"></div>
+                <div class="row1_seats" id="sseat6" value="seat6" onclick="sbookseat(this.id)"></div>
+                <div class="row1_seats" id="sseat7" value="seat7" onclick="sbookseat(this.id)"></div>
+                <div class="row1_seats" id="sseat8" value="seat8" onclick="sbookseat(this.id)"></div>
+                <div class="row1_seats" id="sseat9" value="seat9" onclick="sbookseat(this.id)"></div>
+                <div class="row1_seats" id="sseat10" value="seat10" onclick="sbookseat(this.id)"></div>
+                <div class="row1_seats" id="sseat11" value="seat11" onclick="sbookseat(this.id)"></div>
+                <div class="row1_seats" id="sseat12" value="seat12" onclick="sbookseat(this.id)"></div>
+            </div>
+            <div class="row2">
+                <div class="row2_seats" id="sseat12" value="seat13" onclick="sbookseat(this.id)"></div>
+                <div class="row2_seats" id="sseat14" value="seat14" onclick="sbookseat(this.id)"></div>
+                <div class="row2_seats" id="sseat15" value="seat15" onclick="sbookseat(this.id)"></div>
+                <div class="row2_seats" id="sseat16" value="seat16" onclick="sbookseat(this.id)"></div>
+                <div class="row2_seats" id="sseat17" value="seat17" onclick="sbookseat(this.id)"></div>
+                <div class="row2_seats" id="sseat18" value="seat18" onclick="sbookseat(this.id)"></div>
+                <div class="row2_seats" id="sseat19" value="seat19" onclick="sbookseat(this.id)"></div>
+                <div class="row2_seats" id="sseat20" value="seat20" onclick="sbookseat(this.id)"></div>
+                <div class="row2_seats" id="sseat21" value="seat21" onclick="sbookseat(this.id)"></div>
+                <div class="row2_seats" id="sseat22" value="seat22" onclick="sbookseat(this.id)"></div>
+                <div class="row2_seats" id="sseat23" value="seat23" onclick="sbookseat(this.id)"></div>
+                <div class="row2_seats" id="sseat24" value="seat24" onclick="sbookseat(this.id)"></div>
+            </div>
+            <div class="row3">
+                <div class="row3_seats" id="sseat25" value="seat25" onclick="sbookseat(this.id)"></div>
+                <div class="row3_seats" id="sseat26" value="seat26" onclick="sbookseat(this.id)"></div>
+                <div class="row3_seats" id="sseat27" value="seat27" onclick="sbookseat(this.id)"></div>
+                <div class="row3_seats" id="sseat28" value="seat28" onclick="sbookseat(this.id)"></div>
+                <div class="row3_seats" id="sseat29" value="seat29" onclick="sbookseat(this.id)"></div>
+                <div class="row3_seats" id="sseat30" value="seat30" onclick="sbookseat(this.id)"></div>
+                <div class="row3_seats" id="sseat31" value="seat31" onclick="sbookseat(this.id)"></div>
+                <div class="row3_seats" id="sseat32" value="seat32" onclick="sbookseat(this.id)"></div>
+                <div class="row3_seats" id="sseat33" value="seat33" onclick="sbookseat(this.id)"></div>
+                <div class="row3_seats" id="sseat34" value="seat34" onclick="sbookseat(this.id)"></div>
+                <div class="row3_seats" id="sseat35" value="seat35" onclick="sbookseat(this.id)"></div>
+                <div class="row3_seats" id="sseat36" value="seat36" onclick="sbookseat(this.id)"></div>
+            </div>
+            <div class="button">
+                <button class="cinema_btn" style="margin-top: 30px;" onclick="save_spiderman_ticket()">Book Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="godzilla" id="godzilla">
+        <center>
+            <div class="trailer">
+                <iframe width="600" height="400" src="https://www.youtube.com/embed/QFxN2oDKk0E"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </center>
+        <div class="seats">
+            <div class="screen">Screen</div>
+            <div class="row1">
+                <div class="row1_seats" id="gseat1" value="seat1" onclick="gbookseat(this.id)"></div>
+                <div class="row1_seats" id="gseat2" value="seat2" onclick="gbookseat(this.id)"></div>
+                <div class="row1_seats" id="gseat3" value="seat3" onclick="gbookseat(this.id)"></div>
+                <div class="row1_seats" id="gseat4" value="seat4" onclick="gbookseat(this.id)"></div>
+                <div class="row1_seats" id="gseat5" value="seat5" onclick="gbookseat(this.id)"></div>
+                <div class="row1_seats" id="gseat6" value="seat6" onclick="gbookseat(this.id)"></div>
+                <div class="row1_seats" id="gseat7" value="seat7" onclick="gbookseat(this.id)"></div>
+                <div class="row1_seats" id="gseat8" value="seat8" onclick="gbookseat(this.id)"></div>
+                <div class="row1_seats" id="gseat9" value="seat9" onclick="gbookseat(this.id)"></div>
+                <div class="row1_seats" id="gseat10" value="seat10" onclick="gbookseat(this.id)"></div>
+                <div class="row1_seats" id="gseat11" value="seat11" onclick="gbookseat(this.id)"></div>
+                <div class="row1_seats" id="gseat12" value="seat12" onclick="gbookseat(this.id)"></div>
+            </div>
+            <div class="row2">
+                <div class="row2_seats" id="gseat12" value="seat13" onclick="gbookseat(this.id)"></div>
+                <div class="row2_seats" id="gseat14" value="seat14" onclick="gbookseat(this.id)"></div>
+                <div class="row2_seats" id="gseat15" value="seat15" onclick="gbookseat(this.id)"></div>
+                <div class="row2_seats" id="gseat16" value="seat16" onclick="gbookseat(this.id)"></div>
+                <div class="row2_seats" id="gseat17" value="seat17" onclick="gbookseat(this.id)"></div>
+                <div class="row2_seats" id="gseat18" value="seat18" onclick="gbookseat(this.id)"></div>
+                <div class="row2_seats" id="gseat19" value="seat19" onclick="gbookseat(this.id)"></div>
+                <div class="row2_seats" id="gseat20" value="seat20" onclick="gbookseat(this.id)"></div>
+                <div class="row2_seats" id="gseat21" value="seat21" onclick="gbookseat(this.id)"></div>
+                <div class="row2_seats" id="gseat22" value="seat22" onclick="gbookseat(this.id)"></div>
+                <div class="row2_seats" id="gseat23" value="seat23" onclick="gbookseat(this.id)"></div>
+                <div class="row2_seats" id="gseat24" value="seat24" onclick="gbookseat(this.id)"></div>
+            </div>
+            <div class="row3">
+                <div class="row3_seats" id="gseat25" value="seat25" onclick="gbookseat(this.id)"></div>
+                <div class="row3_seats" id="gseat26" value="seat26" onclick="gbookseat(this.id)"></div>
+                <div class="row3_seats" id="gseat27" value="seat27" onclick="gbookseat(this.id)"></div>
+                <div class="row3_seats" id="gseat28" value="seat28" onclick="gbookseat(this.id)"></div>
+                <div class="row3_seats" id="gseat29" value="seat29" onclick="gbookseat(this.id)"></div>
+                <div class="row3_seats" id="gseat30" value="seat30" onclick="gbookseat(this.id)"></div>
+                <div class="row3_seats" id="gseat31" value="seat31" onclick="gbookseat(this.id)"></div>
+                <div class="row3_seats" id="gseat32" value="seat32" onclick="gbookseat(this.id)"></div>
+                <div class="row3_seats" id="gseat33" value="seat33" onclick="gbookseat(this.id)"></div>
+                <div class="row3_seats" id="gseat34" value="seat34" onclick="gbookseat(this.id)"></div>
+                <div class="row3_seats" id="gseat35" value="seat35" onclick="gbookseat(this.id)"></div>
+                <div class="row3_seats" id="gseat36" value="seat36" onclick="gbookseat(this.id)"></div>
+            </div>
+            <div class="button">
+                <button style="margin-top: 30px;" class="cinema_btn" onclick="save_godzilla_ticket()">Book Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="recipt" id="tgrecipt">
+        <div class="mname" id="tgmname"></div>
+        <div class="uname" id="tguname"></div>
+        <div>Booked Seats</div>
+        <div class="seats" id="tgsBook">
+        </div>
+    </div>
+    <div class="recipt" id="abrecipt">
+        <div class="mname" id="abmname"></div>
+        <div class="uname" id="abuname"></div>
+        <div>Booked Seats</div>
+        <div class="seats" id="absBook">
+        </div>
+    </div>
+    <div class="recipt" id="srecipt">
+        <div class="mname" id="smname"></div>
+        <div class="uname" id="suname"></div>
+        <div>Booked Seats</div>
+        <div class="seats" id="ssBook">
+        </div>
+    </div>
+    <div class="recipt" id="grecipt">
+        <div class="mname" id="gmname"></div>
+        <div class="uname" id="guname"></div>
+        <div>Booked Seats</div>
+        <div class="seats" id="gsBook">
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
